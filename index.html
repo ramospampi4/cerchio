@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>circonferenza</title>
+<meta charset=utf-8>
+<head>
+
+
+  <script src=js/cerchio.js>
+  </script>
+
+
+<link rel=stylesheet href=http://getskeleton.com/dist/css/normalize.css>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+</head>
+<body>
+
+     <div class=container>
+       <div class=row>
+          <div class="twelve columns">
+            
+               </button>
+               <p>Area=r<sup>2</sup> π</p>
+          </div>
+       </div>
+       <div class=row>
+          <div class="six columns">
+              <img src=img/1.jnpg class=u-full-width>
+          </div>
+          <div class="six columns">
+               <!-- form quadrato -->
+        <form name=circonferenza>
+        <label for=raggio> misura dei raggio</label>
+        <input type=number name=r min=0.001 step=0.001 required><br>
+        <input type=reset value=Cancella onclick=cancella() class=button>
+        <button type=button onclick=calcolaCirconferenza()> Circonferenza </button>
+        <button type=button onclick=calcolaArea() class=button>Area</button>
+        </form>
+        <p id=circonferenza> </p>
+        <p id=area> </p>
+
+            
+          </div>
+       </div>
+      
+     </div>
+</body>
+</html>
